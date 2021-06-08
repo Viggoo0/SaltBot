@@ -1,0 +1,8 @@
+debug: true
+guilds:
+  711342719418761317:
+    guildName: Min Test Server
+    helpChName: SaltBotHelp
+    isHelpCh: false
+paths:
+  sound_bytes: ../data/sound_bytes/
