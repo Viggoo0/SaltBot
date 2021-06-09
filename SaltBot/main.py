@@ -1,7 +1,7 @@
 import os
 import discord
 from dotenv import load_dotenv
-from salt_client import SaltClient
+from SaltClient import SaltClient
 import MetadataManager
 
 metadata = MetadataManager.get_metadata()

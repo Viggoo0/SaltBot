@@ -13,7 +13,7 @@
 import yaml
 import os
 import discord
-from _dataclasses import Context, GuildSettings
+from DataClasses import Context, GuildSettings
 from typing import Union
 
 
