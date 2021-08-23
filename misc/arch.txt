@@ -1,0 +1,44 @@
+@startuml
+!theme sandstone
+
+class SaltClient {
+	
+}
+
+class Player {
+	deque<Sound> queue
+	Guild guild
+
+	void checkQueue()
+}
+
+class Sound {
+	str path
+	void play(vc: VoiceChannel, callback)
+}
+
+class GuildSettings {
+	int guildID
+	str helpChannelName
+	bool isHelpChannel
+}
+
+class SoundManager {
+	str soundDir
+	Sound getSound(name: str)
+}
+
+class PlayerManager {
+	Dict[int guildID, Player] players
+
+	Player getPlayer(guildID: int)
+}
+
+class MetadataManager {
+	str metadataPath
+
+	GuildSettings getGuildSettings(guildID: int)
+	void updateGuildSettings(guildID: int, newSettings: GuildSettings)
+}
+
+@enduml
